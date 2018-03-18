@@ -3,5 +3,5 @@
 
 int main (int argc, char** argv)
 {
-	return 0;
+	return analyze_input_and_run(argc, argv);
 }

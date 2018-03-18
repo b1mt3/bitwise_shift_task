@@ -24,7 +24,35 @@
 3. Any language solution is possible, with only condition to use the available operations mentioned above.
 
 ***
+### Интерфейс
+### Interface
+```
+b_shift [architecture] [number to perform shift on] [direction of shift] [shift offset]
+```
+**architecture** - specify with number 32 or 64
+
+**number** - input the number you want to be shifted
+
+**direction of shift** - 'l' for leftward shift, 'r' - for rightward shift
+
+**shift offset** - input the offest of the desired shift
+
+#### EXAMPLE
+
+Perform a rightward shift with 3-bit offset of 32-bit number 2147481574
+
+```
+b_shift 32 2147481574 r 3
+```
+
+***
 
 ### Коды ошибок
 ### Error codes
 0 - исполнение успешно (execution successful)
+
+-9 - неправильно задано архитектура (architecture specification is invalid)
+
+-17 - не переданы условия задачи (no problem to solve)
+
+-33 - дано неправильное направление сдвига (invalid shift direction is given)
